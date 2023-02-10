@@ -1,1 +1,1 @@
-# JustChat-front-end
+# JustChat front-end
