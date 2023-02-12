@@ -1,16 +1,8 @@
-import {
-  CommunityIcon,
-  MenuIcon,
-  SearchIcon,
-  StatusIcon,
-  NewChatIcon,
-} from "../assets/icons";
-
+import { MenuIcon, StatusIcon, NewChatIcon } from "../assets/icons";
+import { Flex, Avatar, HStack, IconButton, Iconlabel } from "@chakra-ui/react";
 const iconData = [
-  { icon: <CommunityIcon />, label: "Community chat" },
   { icon: <NewChatIcon />, label: "New chat" },
   { icon: <MenuIcon />, label: "Menu" },
-  { icon: <SearchIcon />, label: "Search" },
   { icon: <StatusIcon />, label: "Status" },
 ];
 
@@ -24,27 +16,31 @@ function CustomIconlabel({ label, icon, ...rest }) {
       color="#232019"
       {...rest}
     >
-      <IconButton variant="ghost">(icon)</IconButton>
+      <IconButton variant="ghost">{icon}</IconButton>
     </Iconlabel>
   );
 }
 
 export function Header(props) {
   return (
-    <Flex bg="#88DEAF" justify="space-between" color="#f2f2f2" {...props}>
-      <Avtar
+    <Flex
+      py="4"
+      px="6"
+      bg="#88DEAF"
+      justify="space-between"
+      color="#f2f2f2"
+      borderRight={"2px solid #232019"}
+      {...props}
+    >
+      <Avatar
         boxSize="50px
   "
-        name="system-ui"
+        name="sans-serif"
         src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
       />
       <HStack>
         {iconData.map((item, index) => (
-          <CustomIconlabel
-            key={index}
-            label={item.label}
-            icon={item.icon}
-          ></CustomIconlabel>
+          <CustomIconlabel key={index} label={item.label} icon={item.icon} />
         ))}
       </HStack>
     </Flex>
