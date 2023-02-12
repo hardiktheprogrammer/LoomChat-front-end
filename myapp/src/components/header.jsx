@@ -31,7 +31,7 @@ function CustomIconlabel({ label, icon, ...rest }) {
 
 export function Header(props) {
   return (
-    <Flex bg="#88DEAF" justify="space-between" {...props}>
+    <Flex bg="#88DEAF" justify="space-between" color="#f2f2f2" {...props}>
       <Avtar
         boxSize="50px
   "
