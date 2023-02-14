@@ -27,6 +27,7 @@ export function Header(props) {
       py="1"
       px="6"
       bg="#a5a5fa"
+      backdropFilter={"blur(50px)"}
       justify="space-between"
       color="#f2f2f2"
       borderRight={"2px solid #232019"}
