@@ -10,7 +10,14 @@ import {
 
 export function SearchPanel(props) {
   return (
-    <HStack spacing={"2.5"} px="8" py="2" borderRadius={"1px"}>
+    <HStack
+      spacing={"2.5"}
+      px="8"
+      py="2"
+      borderRadius={"1px"}
+      borderColor={"#e2e8f0"}
+      {...props}
+    >
       <InputGroup>
         <InputLeftElement pointerEvents={"n"} />
 
