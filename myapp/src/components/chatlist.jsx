@@ -10,7 +10,14 @@ export function Chat({ name, message, date, seen, src, ...rest }) {
                 <Box>
                     <Flex>
                     <Box>
-                        <Text></Text>
+                            <Text> </Text>
+                                <HStack>
+
+                                <DeliveredIcon />
+                                <Test></Test>
+                            </HStack>
+                            
+                            
                     </Box>
             
                 </Flex>
