@@ -1,10 +1,11 @@
-import React from "react";
-import { Header } from "./components/header";
+import { Flex } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Flex>
+      <LeftPannel />
+      <RightPannel />
+    </Flex>
   );
 }
 
