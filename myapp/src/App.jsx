@@ -1,12 +1,7 @@
-import { Flex } from "@chakra-ui/react";
-
+// import { Flex } from "@chakra-ui/react";
+import { Header } from "./components/header";
 function App() {
-  return (
-    <Flex>
-      <LeftPannel />
-      <RightPannel />
-    </Flex>
-  );
+  return <Header />;
 }
 
 export default App;
